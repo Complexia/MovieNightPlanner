@@ -3,7 +3,7 @@ package com.example.movienightplanner;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ViewEvents extends AppCompatActivity {
+public class ViewEventsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

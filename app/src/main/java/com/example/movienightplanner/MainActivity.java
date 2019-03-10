@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         schedule_event.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CreateEvent.class);
+                Intent intent = new Intent(MainActivity.this, CreateEventActivity.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         view_events.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ViewEvents.class);
+                Intent intent = new Intent(MainActivity.this, ViewEventsActivity.class);
                 startActivity(intent);
             }
         });
