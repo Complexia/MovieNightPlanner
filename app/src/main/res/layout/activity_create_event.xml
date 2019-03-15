@@ -9,63 +9,45 @@
 
     <EditText
         android:id="@+id/event_name_box"
-        android:layout_width="0dp"
+        android:layout_width="285dp"
         android:layout_height="0dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginRight="69dp"
-        android:layout_marginBottom="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="72dp"
+        android:autoSizeTextType="uniform"
+        android:inputType="text"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/event_location_box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/event_name_label"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/event_name_next_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_name_label" />
 
 
     <TextView
         android:id="@+id/event_name_label"
-        android:layout_width="0dp"
+        android:layout_width="314dp"
         android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="9dp"
-        android:layout_marginBottom="39dp"
-        android:text="Enter event name"
-        app:layout_constraintBottom_toTopOf="@+id/event_location_label"
-        app:layout_constraintEnd_toStartOf="@+id/event_name_box"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="67dp"
+        android:autoSizeTextType="uniform"
+        android:text="Choose event name"
+        app:barrierAllowsGoneWidgets="false"
+        app:layout_constraintBottom_toTopOf="@+id/event_name_box"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/event_location_box"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="503dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/event_location_label"
-        app:layout_constraintTop_toBottomOf="@+id/event_name_box" />
 
-
-    <TextView
-        android:id="@+id/event_location_label"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/event_name_next_button"
+        android:layout_width="233dp"
         android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="510dp"
-        android:text="@string/enter_event_location"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="327dp"
+        android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/event_location_box"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/event_name_label" />
-
+        app:layout_constraintTop_toBottomOf="@+id/event_name_box" />
 
 </android.support.constraint.ConstraintLayout>
