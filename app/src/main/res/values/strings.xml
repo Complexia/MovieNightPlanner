@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MovieNightPlanner</string>
+    <string name="enter_event_location">Enter event location</string>
 </resources>
