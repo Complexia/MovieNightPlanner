@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectStartDateActivity">
+
+
+    <EditText
+        android:id="@+id/start_date_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="18dp"
+        android:autoSizeTextType="uniform"
+        android:inputType="text"
+        android:text="DD/MM/YYYY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        app:layout_constraintEnd_toEndOf="@+id/start_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_date_label" />
+
+
+    <TextView
+        android:id="@+id/start_date_label"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:autoSizeTextType="uniform"
+        android:text="Select start date"
+        app:barrierAllowsGoneWidgets="false"
+        app:layout_constraintBottom_toTopOf="@+id/start_date_box"
+        app:layout_constraintEnd_toEndOf="@+id/start_button"
+        app:layout_constraintStart_toStartOf="@+id/start_date_box"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="321dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="406dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_date_box" />
+
+
+</android.support.constraint.ConstraintLayout>

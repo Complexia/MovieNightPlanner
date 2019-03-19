@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewEventsActivity"></activity>
+        <activity android:name=".SelectMovieActivity"></activity>
+        <activity android:name=".SelectEndDateActivity" />
+        <activity android:name=".SelectStartDateActivity" />
+        <activity android:name=".ViewEventsActivity" />
         <activity android:name=".CreateEventActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
