@@ -10,19 +10,19 @@ import android.widget.EditText;
 public class CreateEventActivity extends AppCompatActivity {
 
     private Button next;
-    //private EditText event_name_box;
+    private EditText event_name_box;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_event);
-        //event_name_box = findViewById(R.id.event_name_box);
-        //final String vhs = event_name_box.getText().toString(); //Name for the event
+        event_name_box = findViewById(R.id.event_name_box);
+        final String vhs = event_name_box.getText().toString(); //Name for the event
         next = findViewById(R.id.event_name_next_button);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CreateEventActivity.this, SelectStartDateActivity.class);
-                //intent.putExtra("eventName",vhs);
+                intent.putExtra("eventName",vhs);
                 startActivity(intent);
             }
         });
